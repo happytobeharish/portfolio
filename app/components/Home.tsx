@@ -9,6 +9,7 @@ interface HomeProps {
   colors: PaletteStyles;
   onCTAClick: () => void;
   onContactClick: () => void;
+  darkMode:boolean
 }
 
 const Home: React.FC<HomeProps> = ({ colors, onCTAClick, onContactClick }) => {
