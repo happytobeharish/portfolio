@@ -24,6 +24,8 @@ const Home: React.FC<HomeProps> = ({
 }) => {
   return (
     <section id="home" className="text-center space-y-6">
+
+      {/* WRAPPING EVERYTHING INSIDE LazyMotion FIXES THE ERROR */}
       <LazyMotion features={domAnimation}>
         
         {/* Hero Section */}
