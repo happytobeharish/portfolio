@@ -38,7 +38,7 @@ interface NavbarProps {
   colors: PaletteStyles;
 }
 
-const sectionIcons: Record<SectionId, JSX.Element> = {
+const sectionIcons: Record<SectionId ,React.JSX.Element> = {
   home: <HomeIcon className="w-5 h-5 sm:w-6 sm:h-6" />,
   about: <User className="w-5 h-5 sm:w-6 sm:h-6" />,
   experience: <Briefcase className="w-5 h-5 sm:w-6 sm:h-6" />,
