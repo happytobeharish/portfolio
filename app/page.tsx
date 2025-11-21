@@ -9,9 +9,9 @@ import Education from "./components/Education";
 import ProofOfWork from "./components/ProofOfWork";
 import Contact from "./components/Contact";
 
-type PaletteName = "bold" | "futuristic";
+export type PaletteName = "bold" | "futuristic";
 
-type PaletteStyles = {
+ export type PaletteStyles = {
   gradient: string;
   button: string;
   textDark: string;

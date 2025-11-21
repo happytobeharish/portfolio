@@ -3,13 +3,7 @@
 import React from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
-
-type PaletteStyles = {
-  gradient: string;
-  button: string;
-  textDark: string;
-  textLight: string;
-};
+import { PaletteStyles } from "../page";
 
 interface HomeProps {
   colors: PaletteStyles;
@@ -17,17 +11,11 @@ interface HomeProps {
   onContactClick: () => void;
 }
 
-const Home: React.FC<HomeProps> = ({
-  colors,
-  onCTAClick,
-  onContactClick,
-}) => {
+const Home: React.FC<HomeProps> = ({ colors, onCTAClick, onContactClick }) => {
   return (
     <section id="home" className="text-center space-y-6">
-
       {/* WRAPPING EVERYTHING INSIDE LazyMotion FIXES THE ERROR */}
       <LazyMotion features={domAnimation}>
-        
         {/* Hero Section */}
         <m.div
           initial={{ opacity: 0, y: 16 }}
@@ -98,7 +86,6 @@ const Home: React.FC<HomeProps> = ({
             <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </m.a>
         </m.div>
-
       </LazyMotion>
     </section>
   );
